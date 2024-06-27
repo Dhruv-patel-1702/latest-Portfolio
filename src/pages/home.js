@@ -23,12 +23,16 @@ const Home = () => {
       <Navbar />
       <div className="flex items-center justify-center absolute z-10 w-full h-full overflow-hidden">
         <div>
-          <h1 className="text-9xl italic">
-            <span className="text-7xl font-serif ">I'm a</span> DHRUV
-            PATEL
-          </h1>
-          <h2 className="text-10xl relative right-40 italic">FULL-STACK</h2>
-          <span className="text-10xl relative left-48 italic">DEVELOPER</span>
+          <span className="text-7xl font-serif ">I'm a </span>
+          <span className="text-9xl italic hover:border rounded-md">DHRUV PATEL</span>
+          <br />
+          <span className="text-9xl relative right-40 italic hover:border rounded-md pr-3">
+            FULL-STACK{" "}
+          </span>
+          <br />
+          <span className="text-9xl relative left-48 italic  hover:border rounded-md pr-3">
+            DEVELOPER
+          </span>
         </div>
       </div>
     </div>
