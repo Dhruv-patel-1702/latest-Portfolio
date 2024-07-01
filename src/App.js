@@ -37,7 +37,14 @@ const App = () => {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route
+            path="/"
+            element={
+              <Home
+                cursorClasses={{ dot: "cursor-dot", outline: "cursor-outline" }}
+              />
+            }
+          />
           <Route path="/about" element={<About />} />
           <Route path="/service" element={<Service />} />
           <Route path="/project" element={<Project />} />
