@@ -9,7 +9,7 @@ import Project from "./pages/projects.js";
 import Contact from "./pages/contact.js";
 import Cursor from "./components/cursor.js";
 import PuffLoader from "react-spinners/PuffLoader";
-import Navbar from "./components/navbar.js"
+import Navbar from "./components/navbar.js";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -29,7 +29,7 @@ const App = () => {
   }
 
   return (
-    <div >
+    <div>
       <BrowserRouter>
         <Cursor />
         <Navbar />
@@ -38,12 +38,7 @@ const App = () => {
             path="/"
             element={
               <>
-                <Home
-                  cursorClasses={{
-                    dot: "cursor-dot",
-                    outline: "cursor-outline",
-                  }}
-                />
+                <Home />
               </>
             }
           />

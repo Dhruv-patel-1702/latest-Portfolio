@@ -1,7 +1,20 @@
 import React, { useRef, useEffect } from "react";
 import Navbar from "../components/navbar";
+import { gsap } from 'gsap';
 
-const Home = ({ cursorClasses }) => {
+const Home = () => {
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      gsap.from(".box", {
+        opacity:0,
+        y:100,
+        duration: 1
+      });
+    },100); 
+
+    return () => clearTimeout(timer); 
+  }, []);
+
   const videoRef = useRef(null);
 
   useEffect(() => {
@@ -40,11 +53,11 @@ const Home = ({ cursorClasses }) => {
           className="absolute top-0 left-0 w-full h-full object-cover "
         ></video>
         <Navbar/>
-        <div className="flex items-center justify-center absolute  w-full h-full">
+        <div className="box flex items-center justify-center absolute  w-full h-full">
           <div>
-            <span className="text-7xl font-serif">I'm a </span>
+            <span className=" text-7xl font-serif">I'm a </span>
             <span
-              className="text-9xl"
+              className=" text-9xl"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
@@ -52,7 +65,7 @@ const Home = ({ cursorClasses }) => {
             </span>
             <br />
             <span
-              className="text-9xl relative right-40"
+              className=" text-9xl relative right-40"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
@@ -60,7 +73,7 @@ const Home = ({ cursorClasses }) => {
             </span>
             <br />
             <span
-              className="text-9xl relative left-48"
+              className=" text-9xl relative left-48"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
@@ -68,7 +81,7 @@ const Home = ({ cursorClasses }) => {
             </span>
           </div>
         </div>
-        <div className="flex items-center justify-center absolute bottom-8 left-1/2 transform -translate-x-1/2 z-30">
+        <div className="box flex items-center justify-center absolute bottom-8 left-1/2 transform -translate-x-1/2 z-30">
           <p className="text-2xl">[ Scroll down ]</p>
           <img
             src="./Assets/scrolldown.svg"
