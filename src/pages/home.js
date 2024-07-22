@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import Navbar from "../components/navbar";
+import About from './about.js'
 import { gsap } from 'gsap';
 
 const Home = () => {
@@ -53,7 +54,7 @@ const Home = () => {
           className="absolute top-0 left-0 w-full h-full object-cover "
         ></video>
         <Navbar/>
-        <div className="box flex items-center justify-center absolute  w-full h-full">
+        <div className="box flex items-center justify-center absolute  w-full h-screen">
           <div>
             <span className=" text-7xl font-serif">I'm a </span>
             <span
@@ -90,6 +91,7 @@ const Home = () => {
           />
         </div>
       </div>  
+      <About/>
     </>
   );
 };

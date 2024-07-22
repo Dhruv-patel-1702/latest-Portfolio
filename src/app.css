@@ -37,8 +37,8 @@ body {
 
 .hovered-dot {
     background-color: rgba(150, 149, 149, 0.5) !important; /* Transparent gray */
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
 }
 
 .hovered-outline {
