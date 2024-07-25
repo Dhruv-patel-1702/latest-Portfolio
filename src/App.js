@@ -10,6 +10,7 @@ import Contact from "./pages/contact.js";
 import Cursor from "./components/cursor.js";
 import PuffLoader from "react-spinners/PuffLoader";
 import Navbar from "./components/navbar.js";
+import SmoothScroll from './components/smoothscroll.js'
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -30,6 +31,7 @@ const App = () => {
 
   return (
     <div>
+      <SmoothScroll>
       <BrowserRouter>
         <Cursor />
         <Navbar />
@@ -48,6 +50,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
+      </SmoothScroll>
     </div>
   );
 };
