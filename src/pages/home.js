@@ -54,7 +54,7 @@ const Home = () => {
           className="absolute top-0 left-0 w-full h-full object-cover "
         ></video>
         <Navbar />
-        <div className="box flex items-center justify-center w-full h-screen px-2">
+        <div className="box flex items-center justify-center w-full h-screen px-5">
           <div className="text-center">
             <span
               className="text-3xl font-serif"

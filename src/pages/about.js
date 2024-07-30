@@ -5,26 +5,26 @@ const about = () => {
   return (
     <>
       <div className="flex justify-center items-center">
-      <div className="w-full h-screen text-white">
-        <div>
-          <h1 className="text-lg text-center mb-6 mt-20">~About me</h1>
-          <div className="flex justify-center ">
-            <img
-              src="./Assets/AvatarAndIcons-removebg-preview.png"
-              className="w-64 h-64"
-              alt="About img"
-            />
+        <div className="w-full h-screen text-white">
+          <div>
+            <h1 className="text-lg text-center mb-6 mt-20">~About me</h1>
+            <div className="flex justify-center ">
+              <img
+                src="./Assets/AvatarAndIcons-removebg-preview.png"
+                className="w-64 h-64"
+                alt="About img"
+              />
+            </div>
+            <div className="text-xl py-8 text-center">
+              <h2 className="text-2xl font-normal">Hi there, I'm </h2>
+              <h1 className="text-5xl">Dhruv Patel</h1>
+              <h3 className="pt-5">find me in : </h3>
+              <dir className="flex justify-center pt-3">
+                <Platform />
+              </dir>
+            </div>
           </div>
-          <div className="text-xl py-6 text-center">
-            <h2 className="text-3xl font-normal">Hi there, I'm </h2>
-            <h1 className="text-5xl">Dhruv Patel</h1>
-            <h3 className="pt-5">find me in : </h3>
-            <dir className="flex justify-center pt-3">
-              <Platform />
-            </dir>
-          </div>
-        </div>
-        <div className="flex justify-center items-center text-white ">
+          <div className="flex justify-center items-center text-white mt-8">
             <div className="text-pretty px-6 text-base ">
               <p className="leading-6">
                 Hi, I’m Dhruv Patel 😊. As a web developer and UI/UX designer,
@@ -40,7 +40,7 @@ const about = () => {
               </p>
             </div>
           </div>
-      </div>
+        </div>
       </div>
     </>
   );

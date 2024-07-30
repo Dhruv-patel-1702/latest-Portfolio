@@ -24,7 +24,7 @@ const App = () => {
   if (loading) {
     return (
       <div className="preloader flex justify-center items-center h-screen w-screen bg-[#000000] ">
-        <PuffLoader color={"#feca18"} loading={loading} size={60} />
+        <PuffLoader color={"#feca18"} loading={loading} size={50} />
       </div>
     );
   }
