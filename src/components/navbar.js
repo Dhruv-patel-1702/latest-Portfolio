@@ -26,14 +26,14 @@ const Navbar = () => {
   return (
     <div>
       <div
-        className={`flex justify-between items-center h-16 fixed top-0 left-0 w-full z-20 font-general-sans transition-transform duration-300 ${
+        className={`flex justify-between items-center h-16 fixed top-0 left-0 w-full z-20 font-general-sans transition-transform duration-300 xl:px-6 pt-5 ${
           navbarVisible
             ? "transform translate-y-0"
             : "transform -translate-y-full"
-        } bg-black shadow-md`}
+        }  shadow-md`}
       >
         <div className="logoname flex items-center justify-between w-full md:w-auto px-4">
-          <h2 className="text-lg text-white font-bold">Dhruv Patel</h2>
+          <h2 className="text-lg text-white font-bold border border-white px-4 py-1 rounded-full ">Dhruv Patel</h2>
           <button
             className="text-white md:hidden focus:outline-none"
             onClick={toggleMenu}
@@ -64,7 +64,7 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
-        <div className="hidden md:flex space-x-4 pr-4 text-white">
+        <div className="hidden md:flex space-x-4 pr-4 text-white md:text-base gap-x-3">
           <Link to="/">Home</Link>
           <Link to="/about">About me</Link>
           <Link to="/service">Services</Link>
@@ -80,7 +80,7 @@ const Navbar = () => {
         } transition-transform duration-300 z-30 md:hidden`}
       >
         <nav className="flex justify-center items-center h-screen">
-          <ul className="flex flex-col items-start space-y-20 pl-6 text-white text-sm">
+          <ul className="flex flex-col items-start space-y-20 pl-6 text-white text-sm ">
             <li>
               <Link to="/" onClick={toggleMenu}>
                 Home

@@ -54,29 +54,33 @@ const Home = () => {
           className="absolute top-0 left-0 w-full h-full object-cover "
         ></video>
         <Navbar />
-        <div className="box flex items-center justify-center w-full h-screen px-5">
+        <div className="box flex items-center justify-center w-full h-screen px-3 gap-y-5">
           <div className="text-center">
             <span
-              className="text-3xl font-serif"
+              className="text-3xl font-serif lg:text-3xl"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
               I'm a
             </span>
-            <h1 className="text-4xl leading-snug" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-              Dhruv Patel <br /> Full-Stack Developer · UI/UXDesign
+            <h1
+              className="text-4xl leading-snug lg:text-6xl"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              Dhruv Patel <br /> Full-Stack Developer <br /> UI/UXDesign
             </h1>
           </div>
         </div>
         <div className="flex items-center justify-center">
-        <div className="box flex absolute bottom-28">
-          <p className="text-lg">[ Scroll down ]</p>
-          <img
-            src="./Assets/scrolldown.svg"
-            alt="scroll"
-            className="w-4 ml-2"
-          />
-        </div>
+          <div className="box flex absolute bottom-28">
+            <p className="text-lg">[ Scroll down ]</p>
+            <img
+              src="./Assets/scrolldown.svg"
+              alt="scroll"
+              className="w-4 ml-2"
+            />
+          </div>
         </div>
       </div>
       <About />

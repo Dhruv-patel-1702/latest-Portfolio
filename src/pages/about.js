@@ -6,9 +6,8 @@ const about = () => {
     <>
       <div className="flex justify-center items-center">
         <div className="w-full h-screen text-white">
-          <div>
-            <h1 className="text-lg text-center mb-6 mt-20">~About me</h1>
-            <div className="flex justify-center ">
+          <div className="lg:flex justify-center items-center mt-36 gap-x-16">
+            <div className="flex justify-center">
               <img
                 src="./Assets/AvatarAndIcons-removebg-preview.png"
                 className="w-64 h-64"
@@ -16,7 +15,7 @@ const about = () => {
               />
             </div>
             <div className="text-xl py-8 text-center">
-              <h2 className="text-2xl font-normal">Hi there, I'm </h2>
+              <h2 className="text-2xl font-normal lg:text-xl">Hi there, I'm </h2>
               <h1 className="text-5xl">Dhruv Patel</h1>
               <h3 className="pt-5">find me in : </h3>
               <dir className="flex justify-center pt-3">
@@ -25,7 +24,7 @@ const about = () => {
             </div>
           </div>
           <div className="flex justify-center items-center text-white mt-8">
-            <div className="text-pretty px-6 text-base ">
+            <div className="text-pretty px-6 text-sm w-2/4">
               <p className="leading-6">
                 Hi, I’m Dhruv Patel 😊. As a web developer and UI/UX designer,
                 I’m passionate about creating websites that are both functional
