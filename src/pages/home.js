@@ -64,11 +64,11 @@ const Home = () => {
               I'm a
             </span>
             <h1
-              className="text-4xl leading-snug lg:text-6xl"
+              className="text-4xl leading-snug md:text-6xl lg:text-8xl"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              Dhruv Patel <br /> Full-Stack Developer <br /> UI/UXDesign
+              Dhruv Patel <br className="mb-2" /> Full-Stack Developer <br className="mb-2" /> UI/UXDesign
             </h1>
           </div>
         </div>

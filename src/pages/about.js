@@ -24,7 +24,7 @@ const about = () => {
             </div>
           </div>
           <div className="flex justify-center items-center text-white mt-8">
-            <div className="text-pretty px-6 text-sm w-2/4">
+            <div className="text-pretty text-sm px-5 md:w-2/3 ">
               <p className="leading-6">
                 Hi, I’m Dhruv Patel 😊. As a web developer and UI/UX designer,
                 I’m passionate about creating websites that are both functional
