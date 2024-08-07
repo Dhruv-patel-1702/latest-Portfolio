@@ -51,7 +51,7 @@ const Home = () => {
           autoPlay
           loop
           muted
-          className="absolute top-0 left-0 w-full h-full object-cover "
+          className="absolute top-20 left-0 w-full h-full object-cover "
         ></video>
         <Navbar />
         <div className="box flex items-center justify-center w-full h-screen px-3 gap-y-5">

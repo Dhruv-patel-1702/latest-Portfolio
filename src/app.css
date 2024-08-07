@@ -1,49 +1,49 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    cursor: none;
-    background: #161616;
-    scroll-behavior: smooth;
+  cursor: none;
+  background: black;
+  scroll-behavior: smooth;
 }
 
 .cursor-dot {
-    width: 5px;
-    height: 5px;
-    background-color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    z-index: 30;
-    pointer-events: none;
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 30;
+  pointer-events: none;
 }
 
 .cursor-outline {
-    width: 40px;
-    height: 40px;
-    border: 2px solid hsla(0, 0%, 100%, 0.5);
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    z-index:30;
-    pointer-events: none;
+  width: 40px;
+  height: 40px;
+  border: 2px solid hsla(0, 0%, 100%, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 30;
+  pointer-events: none;
 }
 
 .hovered-dot {
-    background-color: rgba(150, 149, 149, 0.5) !important; /* Transparent gray */
-    width: 100px;
-    height: 100px;
+  background-color: rgba(150, 149, 149, 0.5) !important; /* Transparent gray */
+  width: 100px;
+  height: 100px;
 }
 
 .hovered-outline {
-    border: 2px solid rgba(150, 149, 149, 0.5)  !important; /* Transparent gray */
-    width: auto;
-    height: auto;
+  border: 2px solid rgba(150, 149, 149, 0.5) !important; /* Transparent gray */
+  width: auto;
+  height: auto;
 }

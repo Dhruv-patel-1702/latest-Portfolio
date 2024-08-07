@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <div>
       <div
-        className={`flex justify-between items-center h-16 fixed top-0 left-0 w-full z-20 font-general-sans bg-black  transition-transform duration-300 xl:px-6 pt-5 ${
+        className={`flex justify-between items-center h-16 fixed top-0 left-0 w-full z-20 font-general-sans bg-black transition-transform duration-300 xl:px-6  ${
           navbarVisible
             ? "transform translate-y-0"
             : "transform -translate-y-full"
@@ -67,7 +67,6 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-4 pr-4 text-white md:text-sm gap-x-3">
           <Link to="/">Home</Link>
           <Link to="/about">About me</Link>
-          <Link to="/service">Services</Link>
           <Link to="/project">Projects</Link>
           <Link to="/contact">Contact me</Link>
         </div>
@@ -89,11 +88,6 @@ const Navbar = () => {
             <li>
               <Link to="/about" onClick={toggleMenu}>
                 About me
-              </Link>
-            </li>
-            <li>
-              <Link to="/service" onClick={toggleMenu}>
-                Services
               </Link>
             </li>
             <li>

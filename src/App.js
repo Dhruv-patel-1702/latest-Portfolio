@@ -4,7 +4,6 @@ import "./index.css";
 import "./app.css";
 import Home from "./pages/home.js";
 import About from "./pages/about.js";
-import Service from "./pages/service.js";
 import Project from "./pages/projects.js";
 import Contact from "./pages/contact.js";
 import Cursor from "./components/cursor.js";
@@ -45,7 +44,6 @@ const App = () => {
             }
           />
           <Route path="/about" element={<About />} />
-          <Route path="/service" element={<Service />} />
           <Route path="/project" element={<Project />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
