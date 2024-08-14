@@ -26,14 +26,14 @@ const Navbar = () => {
   return (
     <div>
       <div
-        className={`flex justify-between items-center h-16 fixed top-0 left-0 w-full z-20 font-general-sans bg-black transition-transform duration-300 xl:px-6  ${
+        className={`flex justify-between items-center h-16 fixed top-0 left-0 w-full z-20 font-general-sans bg-black transition-transform duration-300 xl:px-6 ${
           navbarVisible
             ? "transform translate-y-0"
             : "transform -translate-y-full"
         }  shadow-md`}
       >
-        <div className="logoname flex items-center justify-between w-full md:w-auto px-4">
-          <h2 className="text-lg text-white font-bold border border-white px-4 py-1 rounded-full ">Dhruv Patel</h2>
+        <div className="logoname flex items-center justify-between w-full md:w-auto px-4 2xl:mt-5 ">
+          <h2 className="text-lg text-white border border-white px-4 py-1 rounded-full 2xl:text-2xl px-5 ">Dhruv Patel</h2>
           <button
             className="text-white md:hidden focus:outline-none"
             onClick={toggleMenu}
@@ -64,7 +64,7 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
-        <div className="hidden md:flex space-x-4 pr-4 text-white md:text-sm gap-x-3">
+        <div className="hidden md:flex space-x-4 pr-4 text-white md:text-sm gap-x-3 2xl:text-lg mt-5 gap-x-10">
           <Link to="/">Home</Link>
           <Link to="/about">About me</Link>
           <Link to="/project">Projects</Link>

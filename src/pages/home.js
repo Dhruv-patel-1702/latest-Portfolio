@@ -57,14 +57,14 @@ const Home = () => {
         <div className="box flex items-center justify-center w-full h-screen px-3 gap-y-5">
           <div className="text-center">
             <span
-              className="text-3xl font-serif lg:text-3xl"
+              className="text-3xl font-serif lg:text-3xl 2xl:text-5xl"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
               I'm a
             </span>
             <h1
-              className="text-4xl leading-snug md:text-6xl lg:text-8xl"
+              className="text-4xl leading-snug md:text-6xl lg:text-8xl 2xl:text-9xl"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
@@ -73,12 +73,12 @@ const Home = () => {
           </div>
         </div>
         <div className="flex items-center justify-center">
-          <div className="box flex absolute bottom-28">
-            <p className="text-lg">[ Scroll down ]</p>
+          <div className="box flex absolute bottom-24">
+            <p className="text-lg 2xl:text-3xl">[ Scroll down ]</p>
             <img
               src="./Assets/scrolldown.svg"
               alt="scroll"
-              className="w-4 ml-2"
+              className="w-5 ml-2"
             />
           </div>
         </div>
