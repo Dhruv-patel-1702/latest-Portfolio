@@ -64,7 +64,7 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
-        <div className="hidden md:flex space-x-4 pr-4 text-white md:text-sm gap-x-3 2xl:text-lg mt-5 gap-x-10">
+        <div className="hidden md:flex space-x-4 pr-4 text-white md:text-sm gap-x-3 2xl:text-lg mt-5 2xl:gap-x-10">
           <Link to="/">Home</Link>
           <Link to="/about">About me</Link>
           <Link to="/project">Projects</Link>

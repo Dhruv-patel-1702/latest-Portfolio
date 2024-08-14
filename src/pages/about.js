@@ -10,7 +10,7 @@ const about = () => {
             <div className="flex justify-center">
               <img
                 src="./Assets/AvatarAndIcons-removebg-preview.png"
-                className="w-64 h-60 2xl:w-80 h-1/2"
+                className="w-64 h-60 2xl:w-80 h-72"
                 alt="About img"
               />
             </div>

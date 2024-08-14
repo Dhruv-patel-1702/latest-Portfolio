@@ -14,7 +14,7 @@ const platform = () => {
         </Link>
         <Link to="https://github.com/Dhruv-patel-1702">
           <img
-            src="./Assets/github.svg"
+            src="./Assets/Github.svg"
             alt="github"
             className="w-5 h-5 hover:transition-transform duration-300 hover:-translate-y-2 2xl:w-7 h-7"
           />
