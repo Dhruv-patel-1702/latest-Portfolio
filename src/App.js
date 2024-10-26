@@ -7,9 +7,9 @@ import About from "./pages/about.js";
 import Project from "./pages/projects.js";
 import Contact from "./pages/contact.js";
 import Cursor from "./components/cursor.js";
-import PuffLoader from "react-spinners/PuffLoader";
 import Navbar from "./components/navbar.js";
 import SmoothScroll from './components/smoothscroll.js'
+import PuffLoader from "react-spinners/PuffLoader";
 
 const App = () => {
   const [loading, setLoading] = useState(true);

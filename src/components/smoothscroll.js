@@ -1,4 +1,4 @@
-import { ReactLenis} from '@studio-freight/react-lenis'
+import { ReactLenis } from '@studio-freight/react-lenis'
 
 function smoothscroll({children}) {
   return (

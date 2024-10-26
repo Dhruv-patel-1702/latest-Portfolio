@@ -1,6 +1,20 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 const Cursor = () => {
+  const [isVisible, setIsVisible] = useState(window.innerWidth >= 640);
+
+  useEffect(() => {
+    const updateVisibility = () => {
+      setIsVisible(window.innerWidth >= 640);
+    };
+
+    window.addEventListener("resize", updateVisibility);
+
+    return () => {
+      window.removeEventListener("resize", updateVisibility);
+    };
+  }, []);
+
   useEffect(() => {
     const cursorDot = document.querySelector("[data-cursor-dot]");
     const cursorOutline = document.querySelector("[data-cursor-outline]");
@@ -23,17 +37,23 @@ const Cursor = () => {
       }
     };
 
-    window.addEventListener("mousemove", handleMouseMove);
+    if (isVisible) {
+      window.addEventListener("mousemove", handleMouseMove);
+    }
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
-  }, []);
+  }, [isVisible]);
 
   return (
     <>
-      <div className="cursor-dot" data-cursor-dot></div>
-      <div className="cursor-outline" data-cursor-outline></div>
+      {isVisible && (
+        <>
+          <div className="cursor-dot" data-cursor-dot></div>
+          <div className="cursor-outline" data-cursor-outline></div>
+        </>
+      )}
     </>
   );
 };
