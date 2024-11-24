@@ -85,7 +85,7 @@ const Home = () => {
         </div>
       </div>
       <About />
-      <Project/>
+      {/* <Project/> */}
     </>
   );
 };
