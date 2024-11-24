@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import Navbar from "../components/navbar";
 import About from "./about.js";
+import Project from "./projects.js";
 import { gsap } from "gsap";
 
 const Home = () => {
@@ -68,7 +69,7 @@ const Home = () => {
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              Dhruv Patel <br className="mb-2" /> Full-Stack Developer <br className="mb-2" /> UI/UXDesign
+              Dhruv Patel <br className="mb-2" /> Full-Stack Developer <br className="mb-2" /> UI/UX Designer
             </h1>
           </div>
         </div>
@@ -84,6 +85,7 @@ const Home = () => {
         </div>
       </div>
       <About />
+      <Project/>
     </>
   );
 };
