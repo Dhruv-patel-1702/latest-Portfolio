@@ -62,7 +62,7 @@ const Home = () => {
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              I'm a
+              I'm 
             </span>
             <h1
               className="text-4xl leading-snug md:text-6xl lg:text-8xl 2xl:text-9xl"
